@@ -13,12 +13,60 @@ a:hover {
   color: black;
 }
 
+nav .navbar-brand {
+  color: #fff;
+}
+nav .navbar-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5px 20px;
+}
+nav #translate a {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: 0.25em;
+}
+nav .nav-item {
+  color: #fff;
+}
+nav #navbar-collapse {
+  background-color: #0C489A;
+}
+
+.scrolled {
+  background-color: #fff;
+}
+.scrolled .navbar-brand {
+  color: black;
+}
+.scrolled #translate a {
+  color: black;
+}
+.scrolled .nav-item {
+  color: black;
+}
+
 #Landing-Page {
   height: 100vh;
   width: 100%;
   padding: 75px 50px;
-  background-color: grey;
-  color: #F0F7E4;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hardware-pexels-athena.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+}
+#Landing-Page h1 {
+  font-size: 96px;
+}
+#Landing-Page button {
+  width: 200px;
+  margin: 0 auto;
 }
 
 #CRC-Robotics-Competition {
@@ -61,7 +109,11 @@ a:hover {
   height: 400px;
   width: 100%;
   padding: 100px 50px;
-  background-color: grey;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hardware-pexels-athena.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #F0F7E4;
 }
 
