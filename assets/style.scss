@@ -19,6 +19,7 @@ a {
 }
 
 nav {
+    transition: background-color 0.25s ease;
     .navbar-brand {
         color: #fff;
     }
