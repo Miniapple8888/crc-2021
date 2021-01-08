@@ -1,7 +1,3 @@
-# crc-2021
+# CRC 2021: Champlain Robotics' website
 
-Repository for the CRC Robotics Invicta 2021 website
-
-# Credits
-
-Photo by Athena from Pexels
+Repository for the CRC Robotics Invicta 2021 website from Champlain.
