@@ -1,7 +1,16 @@
 /* COLORS */
 * {
   margin: 0;
+  scrollbar-width: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -13,8 +22,72 @@ a:hover {
   color: black;
 }
 
+nav {
+  transition: background-color 0.25s ease;
+}
 nav .navbar-brand {
   color: #fff;
+}
+nav .hamburger-toggler {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  position: relative;
+  margin-left: 20px;
+  width: 50px;
+  height: 50px;
+}
+nav .hamburger-toggler-icon,
+nav .hamburger-toggler-icon::before,
+nav .hamburger-toggler-icon::after {
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+nav .hamburger-toggler-icon {
+  top: calc(50% - 7.5px);
+  left: calc(50% - 22px);
+  transition: all 0.3s linear;
+}
+nav .hamburger-toggler-icon::before,
+nav .hamburger-toggler-icon::after {
+  content: "";
+  left: 0;
+}
+nav .hamburger-toggler-icon::before {
+  bottom: 8px;
+}
+nav .hamburger-toggler-icon::after {
+  top: 8px;
+  transition: all 0.3s linear;
+}
+nav .toggled.hamburger-toggler .hamburger-toggler-icon {
+  height: 2px;
+  width: 40px;
+  left: 5px;
+  top: calc(50% - 7.5px);
+  transform: rotate(-45deg);
+  background-color: #fff;
+}
+nav .toggled.hamburger-toggler .hamburger-toggler-icon:after {
+  width: 40px;
+  height: 2px;
+  top: -1px;
+  transform: rotate(-270deg);
+  background-color: #fff;
+}
+nav .toggled.hamburger-toggler .hamburger-toggler-icon::before {
+  transform: scale(0);
+}
+nav .navbar-brand {
+  position: relative;
+  left: 30px;
 }
 nav .navbar-header {
   display: flex;
@@ -28,9 +101,44 @@ nav #translate a {
   vertical-align: middle;
   position: relative;
   top: 0.25em;
+  transition: 0.5s;
 }
-nav .nav-item {
+nav #translate a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+nav #translate a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+nav .nav-item a {
   color: #fff;
+  transition: 0.5s;
+  position: relative;
+}
+nav .nav-item a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+nav .nav-item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 nav #navbar-collapse {
   background-color: #0C489A;
@@ -38,6 +146,17 @@ nav #navbar-collapse {
 
 .scrolled {
   background-color: #fff;
+}
+.scrolled .hamburger-toggler-icon,
+.scrolled .hamburger-toggler-icon::before,
+.scrolled .hamburger-toggler-icon::after {
+  background-color: black;
+}
+.scrolled .toggled.hamburger-toggler .hamburger-toggler-icon {
+  background-color: black;
+}
+.scrolled .toggled.hamburger-toggler .hamburger-toggler-icon:after {
+  background-color: black;
 }
 .scrolled .navbar-brand {
   color: black;
@@ -47,6 +166,30 @@ nav #navbar-collapse {
 }
 .scrolled .nav-item {
   color: black;
+}
+
+.toggled {
+  background-color: #0C489A;
+}
+.toggled .navbar-brand {
+  color: white;
+}
+.toggled #translate a {
+  color: white;
+}
+.toggled .nav-item {
+  color: white;
+}
+.toggled .hamburger-toggler-icon,
+.toggled .hamburger-toggler-icon::before,
+.toggled .hamburger-toggler-icon::after {
+  background-color: white;
+}
+.toggled .toggled.hamburger-toggler .hamburger-toggler-icon {
+  background-color: white;
+}
+.toggled .toggled.hamburger-toggler .hamburger-toggler-icon:after {
+  background-color: white;
 }
 
 #Landing-Page {
@@ -122,5 +265,7 @@ nav #navbar-collapse {
   width: 100%;
   padding: 50px 50px;
 }
+
+/* RESPONSIVE */
 
 /*# sourceMappingURL=style.css.map */
