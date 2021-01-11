@@ -152,6 +152,9 @@ nav #navbar-collapse {
 nav #navbar-collapse ul {
   padding: 5px 100px;
 }
+.scrolled {
+  background-color: #fff;
+}
 nav #navbar-collapse ul .nav-item {
   padding: 5px;
 }
@@ -163,7 +166,6 @@ nav #navbar-collapse ul .nav-item {
 .toggled {
   background-color: #0C489A;
 }
-
 #Landing-Page {
   min-height: 680px;
   max-height: 100vh;
@@ -186,7 +188,6 @@ nav #navbar-collapse ul .nav-item {
   width: 200px;
   margin: 0 auto;
 }
-
 #CRC-Robotics-Competition {
   height: 400px;
   width: 100%;
@@ -209,13 +210,11 @@ nav #navbar-collapse ul .nav-item {
   width: auto;
   height: auto;
 }
-
 #Game-Description {
   height: 400px;
   width: 100%;
   padding: 100px 50px;
 }
-
 #About-Us {
   height: 400px;
   width: 100%;
@@ -238,12 +237,12 @@ nav #navbar-collapse ul .nav-item {
   width: auto;
   height: auto;
 }
-
 #Team-Roster {
   height: 400px;
   width: 100%;
   padding: 100px 50px;
 }
+
 #Team-Roster h2 {
   text-align: center;
 }
@@ -260,13 +259,11 @@ nav #navbar-collapse ul .nav-item {
   width: 100%;
   padding: 100px 50px;
 }
-
 #Student-Experience {
   height: 400px;
   width: 100%;
   padding: 100px 50px;
 }
-
 #Conclusion {
   height: 400px;
   width: 100%;
@@ -279,7 +276,6 @@ nav #navbar-collapse ul .nav-item {
   color: #fff;
   text-align: center;
 }
-
 #footer {
   height: 30vh;
   width: 100%;
@@ -299,6 +295,7 @@ nav #navbar-collapse ul .nav-item {
 #footer #social-media ul li img {
   max-width: 50px;
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 1080px) {
@@ -400,3 +397,5 @@ nav #navbar-collapse ul .nav-item {
 }
 
 /*# sourceMappingURL=style.css.map */
+=======
+
