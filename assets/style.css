@@ -62,6 +62,7 @@ nav .hamburger-toggler-icon::after {
 }
 nav .hamburger-toggler-icon::before {
   bottom: 8px;
+  transition: all 0.3s linear;
 }
 nav .hamburger-toggler-icon::after {
   top: 8px;
@@ -83,7 +84,9 @@ nav .toggled.hamburger-toggler .hamburger-toggler-icon:after {
   background-color: #fff;
 }
 nav .toggled.hamburger-toggler .hamburger-toggler-icon::before {
-  transform: scale(0);
+  transform: translateX(-100px);
+  opacity: 0;
+  transform: rotate(0);
 }
 nav .navbar-brand {
   position: relative;
@@ -152,9 +155,6 @@ nav #navbar-collapse {
 nav #navbar-collapse ul {
   padding: 5px 100px;
 }
-.scrolled {
-  background-color: #fff;
-}
 nav #navbar-collapse ul .nav-item {
   padding: 5px;
 }
@@ -166,6 +166,7 @@ nav #navbar-collapse ul .nav-item {
 .toggled {
   background-color: #0C489A;
 }
+
 #Landing-Page {
   min-height: 680px;
   max-height: 100vh;
@@ -188,6 +189,7 @@ nav #navbar-collapse ul .nav-item {
   width: 200px;
   margin: 0 auto;
 }
+
 #CRC-Robotics-Competition {
   height: 400px;
   width: 100%;
@@ -210,11 +212,13 @@ nav #navbar-collapse ul .nav-item {
   width: auto;
   height: auto;
 }
+
 #Game-Description {
   height: 400px;
   width: 100%;
   padding: 100px 50px;
 }
+
 #About-Us {
   height: 400px;
   width: 100%;
@@ -237,12 +241,12 @@ nav #navbar-collapse ul .nav-item {
   width: auto;
   height: auto;
 }
+
 #Team-Roster {
   height: 400px;
   width: 100%;
   padding: 100px 50px;
 }
-
 #Team-Roster h2 {
   text-align: center;
 }
@@ -252,6 +256,11 @@ nav #navbar-collapse ul .nav-item {
   max-height: 200px;
   width: auto;
   height: auto;
+  border-radius: 1rem;
+  margin: 25px 25px 25px 0;
+}
+#Team-Roster .profile h5 {
+  font-weight: bold;
 }
 
 #CRC-Season {
@@ -259,11 +268,13 @@ nav #navbar-collapse ul .nav-item {
   width: 100%;
   padding: 100px 50px;
 }
+
 #Student-Experience {
   height: 400px;
   width: 100%;
   padding: 100px 50px;
 }
+
 #Conclusion {
   height: 400px;
   width: 100%;
@@ -276,26 +287,33 @@ nav #navbar-collapse ul .nav-item {
   color: #fff;
   text-align: center;
 }
+
 #footer {
   height: 30vh;
   width: 100%;
-  padding: 50px 50px;
+  padding: 50px;
   text-align: center;
   background-color: #0C489A;
   color: #fff;
 }
 #footer #social-media ul {
   text-decoration: none;
+  padding: 0;
 }
 #footer #social-media ul li {
   display: inline;
-  max-width: 50px;
-  height: auto;
 }
-#footer #social-media ul li img {
-  max-width: 50px;
+#footer #social-media ul li i {
+  font-size: 40px;
+  color: white;
 }
-
+#footer #social-media ul li:not(:last-child) {
+  margin-right: 20px;
+}
+#footer p {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
 
 /* RESPONSIVE */
 @media (max-width: 1080px) {
@@ -397,4 +415,3 @@ nav #navbar-collapse ul .nav-item {
 }
 
 /*# sourceMappingURL=style.css.map */
-
