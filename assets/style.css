@@ -305,7 +305,11 @@ nav #navbar-collapse ul .nav-item {
 }
 #footer #social-media ul li i {
   font-size: 40px;
-  color: white;
+  color: #F0F7E4;
+  transition: color 0.3s ease;
+}
+#footer #social-media ul li i:hover {
+  color: #C73E1D;
 }
 #footer #social-media ul li:not(:last-child) {
   margin-right: 20px;

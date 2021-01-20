@@ -316,7 +316,11 @@ nav {
                 display: inline;
                 i {
                     font-size: 40px;
-                    color: white;
+                    color: $whiteblue;
+                    transition: color 0.3s ease;
+                }
+                i:hover {
+                    color: $redorange;
                 }
             }
             li:not(:last-child) {
