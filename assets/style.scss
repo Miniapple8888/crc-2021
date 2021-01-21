@@ -24,6 +24,25 @@ a {
     }
 }
 
+#backToTop {
+    background-color: $whiteblue;
+    border: $blue 2px solid;
+    border-radius: 1rem;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    opacity: 0;
+    height: auto;
+    min-width: 20px;
+    transition: opacity 0.25s ease;
+    i {
+        font-size: 20px;
+    }
+}
+#backToTop.scrolled {
+    opacity: 100;
+}
+
 .btn-primary {
     background-color: $blue;
 }
@@ -249,7 +268,6 @@ nav {
 }
 
 #Team-Roster {
-    
     width: 100%;
     padding: 100px 50px;
     h2 {
@@ -272,20 +290,17 @@ nav {
 }
 
 #CRC-Season {
-    
     width: 100%;
     padding: 100px 50px;
 }
 
 #Student-Experience {
-    
     width: 100%;
     padding: 100px 50px;
 }
 
 
 #Conclusion {
-    
     width: 100%;
     padding: 100px 50px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
@@ -299,7 +314,6 @@ nav {
 }
 
 #footer {
-    height: 30vh;
     width: 100%;
     padding: 50px;
     text-align: center;
