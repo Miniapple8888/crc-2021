@@ -1,5 +1,6 @@
 $(window).scroll(function() {
     $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+    $('#backToTop').toggleClass('scrolled', $(this).scrollTop() > 100);
 })
 $('.hamburger-toggler').on('click', function() {
     $('nav').toggleClass('toggled');

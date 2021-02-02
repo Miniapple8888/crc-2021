@@ -24,6 +24,25 @@ a {
     }
 }
 
+#backToTop {
+    background-color: $whiteblue;
+    border: $blue 2px solid;
+    border-radius: 1rem;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    opacity: 0;
+    height: auto;
+    min-width: 20px;
+    transition: opacity 0.25s ease;
+    i {
+        font-size: 20px;
+    }
+}
+#backToTop.scrolled {
+    opacity: 100;
+}
+
 .btn-primary {
     background-color: $blue;
 }
@@ -67,6 +86,7 @@ nav {
     }
     .hamburger-toggler-icon::before {
         bottom: 8px;
+        transition: all 0.3s linear;
     }
     .hamburger-toggler-icon::after {
         top: 8px;
@@ -88,7 +108,9 @@ nav {
         background-color: #fff;
     }
     .toggled.hamburger-toggler .hamburger-toggler-icon::before {
-        transform: scale(0);
+        transform: translateX(-100px);
+        opacity: 0;
+        transform: rotate(0);
     }
     .navbar-brand {
         position: relative;
@@ -197,7 +219,6 @@ nav {
 }
 
 #CRC-Robotics-Competition {
-    height: 400px;
     width: 100%;
     padding: 100px 50px;
     margin-left: 0px;
@@ -220,13 +241,11 @@ nav {
 }
 
 #Game-Description {
-    height: 400px;
     width: 100%;
     padding: 100px 50px;
 }
 
 #About-Us {
-    height: 400px;
     width: 100%;
     padding: 100px 50px;
     margin-left: 0px;
@@ -249,7 +268,6 @@ nav {
 }
 
 #Team-Roster {
-    height: 400px;
     width: 100%;
     padding: 100px 50px;
     h2 {
@@ -262,25 +280,27 @@ nav {
             max-height: 200px;
             width: auto;
             height: auto;
+            border-radius: 1rem;
+            margin: 25px 25px 25px 0;
+        }
+        h5 {
+            font-weight: bold;
         }
     }
 }
 
 #CRC-Season {
-    height: 400px;
     width: 100%;
     padding: 100px 50px;
 }
 
 #Student-Experience {
-    height: 400px;
     width: 100%;
     padding: 100px 50px;
 }
 
 
 #Conclusion {
-    height: 400px;
     width: 100%;
     padding: 100px 50px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
@@ -294,24 +314,34 @@ nav {
 }
 
 #footer {
-    height: 30vh;
     width: 100%;
-    padding: 50px 50px;
+    padding: 50px;
     text-align: center;
     background-color: $blue;
     color: #fff;
     #social-media {
         ul {
             text-decoration: none;
+            padding: 0;
             li {
                 display: inline;
-                max-width: 50px;
-                height: auto;
-                img {
-                    max-width: 50px;
+                i {
+                    font-size: 40px;
+                    color: $whiteblue;
+                    transition: color 0.3s ease;
+                }
+                i:hover {
+                    color: $redorange;
                 }
             }
+            li:not(:last-child) {
+                margin-right: 20px;
+            }
         }
+    }
+    p {
+        margin-bottom: 0;
+        margin-top: 1rem;
     }
 }
 
